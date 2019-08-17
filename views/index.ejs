@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="container">
+    <form class="u-full-width u-cf" method="POST" action="/">
+    <input name='line' class="eight columns" type="number" min='0' placeholder="Enter No of lines you Want to Display">
+    <input class="offset-by-one columns two" type="submit" value="submit">
+    </form>
+    <h3>Last <%= num  %> Lines Are</h3>
+    <% for(var i=0; i < arr.length; i++) { %>
+      <p>
+        <%= arr[i] %>
+      </p>
+   <% } %>
+
+  </body>
+</html>
